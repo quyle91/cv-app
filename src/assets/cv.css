@@ -1,0 +1,9 @@
+body{
+    background-color: #616161!important;
+}
+@media (min-width:  601px){
+    #cvcontent{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
