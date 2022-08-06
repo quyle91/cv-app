@@ -5,6 +5,7 @@ import Contact from "./contact.js";
 import FooterWhite from "./footer-white.js";
 
 const WrapperMain = () => {
+	document.body.classList.add("main");
 	const style = {
         marginLeft: "40%",
         backgroundSize: "contain",

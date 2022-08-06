@@ -1,3 +1,6 @@
+*{
+    letter-spacing: -1px;
+}
 body,
 h1,
 h2,
@@ -56,9 +59,21 @@ a.w3-button:hover{
 ul li{
     text-align: left;
 }
-*{
-    letter-spacing: -1px;
-}
+
 .item .w3-card{
     height: 100%;
+}
+
+/*CV page */
+body.cv{
+    background-color: #616161!important;
+}
+@media (min-width:  601px){
+    #cvcontent{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+.mrr8{
+    margin-right:  8px;
 }

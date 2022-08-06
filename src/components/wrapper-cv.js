@@ -1,5 +1,3 @@
-import styles from "../assets/cv.css";
-
 import HeadingCv from "./heading-cv";
 // english
 import HeadingCvEnglish from "./heading-cv-english";
@@ -42,6 +40,7 @@ import FooterGreenEnglish from "./footer-green-english";
 
 
 const WrapperCv = () => {
+	document.body.classList.add("cv");
 	const css = {
 		maxWidth: "1200px",
 		margin: "auto"
