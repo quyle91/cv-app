@@ -1,48 +1,49 @@
+import ProjectItemImage from "./item-image"
+import ProjectItemCompany from "./item-company"
+import ProjectItemLink from "./item-link"
+import ProjectItemTitle from "./item-title"
+
 const TemplateProjectsVid = (prop) => {
-    const id = "id"+ prop.id;
+
+    const id = "id"+ prop.id
+
     const openModal = (id) =>{
-        document.getElementById(id).style.display='block';
+        document.getElementById(id).style.display='block'
     }
     const closeModal = (id) =>{
-        document.getElementById(id).style.display='none';
+        document.getElementById(id).style.display='none'
     }
     
     return ( 
         <>
-        <div id={"item-"+ prop.id} className="item vid w3-container w3-half w3-margin-top">
+        <div id={"item-"+ prop.id} className="item col vid w3-container w3-half w3-margin-top">
             <div className="w3-row w3-card">
                 <div className="w3-quarter">
                     <div className="w3-container w3-padding-16">
-                        <img className="w3-image" src="./img/mobifone 3c.png" />
+                        <ProjectItemImage item={prop.item} />
                     </div>
                 </div>
                 <div className="w3-threequarter ">
                     <div className="w3-container w3-padding-16">
-                        <h4 className="">Giải pháp Công nghệ Thông tin MobiFone</h4>
+                        <ProjectItemTitle item={prop.item} />
+                        <ProjectItemLink item={prop.item} />
+                        <ProjectItemCompany item={prop.item} />
                         <p>
-                            <small> Working on: <a href="https://mka.com.vn">
-                                    <img width="100px" src="https://mka.com.vn/wp-content/uploads/2019/11/minh-khang-logo.png"/>
-                                </a>
-                            </small>
+                            <button onClick={() => openModal(id)} className="w3-button w3-border w3-small">Xem video</button>
                         </p>
-                        <button onClick={() => openModal(id)} className="w3-button w3-border w3-small">Xem video</button>
                         <div id={id} className="w3-modal">
                             <div className="w3-modal-content">
                                 <div className="w3-container">
                                     <div className="w3-content w3-display-container">
                                         <div className="w3-padding-16">
-                                            <video width="100%" height="auto" controls={true}>
-                                                <source src="./img/video/mobifone 3c (4).mp4" type="video/mp4" />
-                                            </video>
-                                            <video width="100%" height="auto" controls={true}>
-                                                <source src="./img/video/mobifone 3c (3).mp4" type="video/mp4" />
-                                            </video>
-                                            <video width="100%" height="auto" controls={true}>
-                                                <source src="./img/video/mobifone 3c (2).mp4" type="video/mp4" />
-                                            </video>
-                                            <video width="100%" height="auto" controls={true}>
-                                                <source src="./img/video/mobifone 3c (1).mp4" type="video/mp4" />
-                                            </video>
+                                            {
+                                                
+                                                prop.item.source.map((item,key)=>(
+                                                    <video key={key} width="100%" height="auto" controls={true}>
+                                                        <source src={item} type="video/mp4" />
+                                                    </video>
+                                                ))
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -56,4 +57,4 @@ const TemplateProjectsVid = (prop) => {
         </>
     )
 }
-export default TemplateProjectsVid;
+export default TemplateProjectsVid

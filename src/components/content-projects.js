@@ -1,30 +1,25 @@
-import projectsData from '../data/projects.json';
+import TemplateProjectsFilter from "../templates/projects/filter"
+import TemplateProjectsItem from "../templates/projects/item"
 
-import TemplateProjectsFilter from "../templates/projects/filter";
-import TemplateProjectsItemYear from "../templates/projects/year";
-import TemplateProjectsItemWeb from "../templates/projects/web";
-import TemplateProjectsItemVideo from "../templates/projects/vid";
-import TemplateProjectsItemDesign from "../templates/projects/des";
-import TemplateProjectsItemOth from "../templates/projects/oth";
+// data
+import { projectsDataItems } from '../data/projects-items'
 
 const ContentProjects = () => {
-    console.log(projectsData);
-    
 
     return ( 
         <>
-        <div className="w3-row">
-            <TemplateProjectsFilter/>
-            <div id="content">
-                <TemplateProjectsItemYear id="12"/>
-                <TemplateProjectsItemWeb id="13"/>
-                <TemplateProjectsItemVideo id="14"/>
-                <TemplateProjectsItemDesign id="15"/>
-                <TemplateProjectsItemOth id="16"/>
+            <div className="w3-row row-fix-margin">
+                <TemplateProjectsFilter/>
+                <div id="content" className="col-container">
+                    {
+                        projectsDataItems.map((item,key)=>(
+                            <TemplateProjectsItem key={key} id={key} item={item} />
+                        ))
+                    }
+                </div>
             </div>
-        </div>
-        <div className="w3-padding-32 w3-content w3-text-grey" style={{marginBottom: "64px"}}></div>
+            <div className="w3-padding-32 w3-content w3-text-grey" style={{marginBottom: "64px"}}></div>
         </>
     )
 }
-export default ContentProjects;
+export default ContentProjects

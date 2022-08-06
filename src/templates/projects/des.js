@@ -1,4 +1,9 @@
- const TemplateProjectsDesign = (prop) => {
+import ProjectItemImage from "./item-image"
+import ProjectItemCompany from "./item-company"
+import ProjectItemLink from "./item-link"
+import ProjectItemTitle from "./item-title"
+
+const TemplateProjectsDesign = (prop) => {
     const id = "id"+ prop.id;
     const openModal = (id) =>{
         document.getElementById(id).style.display='block';
@@ -6,40 +11,50 @@
     const closeModal = (id) =>{
         document.getElementById(id).style.display='none';
     }
-    return ( 
+    return (
         <>
-        <div id={"item-"+ prop.id} className="item des w3-container w3-half w3-margin-top">
+        <div id={"item-"+ prop.id} className="item col des w3-container w3-half w3-margin-top">
             <div className="w3-card w3-row">
                 <div className="w3-quarter ">
                     <div className="w3-container w3-padding-16">
-                        <img className="w3-image" src="./img/uniteam.png" />
+                        <ProjectItemImage item={prop.item} />
                     </div>
                 </div>
                 <div className="w3-threequarter ">
                     <div className="w3-container w3-padding-16">
-                        <h4 className="">Design web Uniteam</h4>
-                        <a target="_blank" href="#" className="link">#</a>
+                        <ProjectItemTitle item={prop.item} />
+                        <ProjectItemLink item={prop.item} />
+                        <ProjectItemCompany item={prop.item} />
                         <p>
-                            <small> Working on: <a href="https://mka.com.vn">
-                                    <img width="100px" src="https://mka.com.vn/wp-content/uploads/2019/11/minh-khang-logo.png" />
-                                </a>
-                            </small>
+                            <button onClick={() => openModal(id)} className="w3-button w3-border w3-small">Xem file design</button>
                         </p>
-                        <button onClick={() => openModal(id)} className="w3-button w3-border w3-small">Xem file design</button>
                         <div id={id} className="w3-modal">
                             <div className="w3-modal-content">
                                 <div className="w3-container">
                                     <div className="w3-content w3-display-container">
                                         <div className="w3-padding-16">
-                                            <p>
-                                                <a href="./pdf/uniteam/1.pdf" target="_blank">Xem File</a>
-                                            </p>
-                                            <p>
-                                                <a href="./pdf/uniteam/2.pdf" target="_blank">Xem File</a>
-                                            </p>
-                                            <p>
-                                                <a href="./pdf/uniteam/3.pdf" target="_blank">Xem File</a>
-                                            </p>
+                                            {
+                                                prop.item.source?
+
+                                                    prop.item.source.map((item,key)=>(
+                                                        <p key={key}>
+                                                            <img alt="#" src={item} />
+                                                        </p>
+                                                    ))
+                                                
+                                                :""
+                                            }
+                                            {
+                                                prop.item.pdf?
+
+                                                    prop.item.pdf.map((item,key)=>(
+                                                        <p key={key}>
+                                                            <a target="_blank" href={item} >Xem File</a>
+                                                        </p>
+                                                    ))
+
+                                                : ""
+                                            }
                                         </div>
                                     </div>
                                 </div>
