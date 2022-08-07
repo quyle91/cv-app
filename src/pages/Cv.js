@@ -1,7 +1,13 @@
+import NavIcon from "../components/nav-icon"
 import WrapperCv from "../components/wrapper-cv"
 
 const Cv = () => {
-  return <WrapperCv/>
+    return (
+        <>
+        <NavIcon/>
+        <WrapperCv/>
+        </>
+    )
 }
 
 export default Cv

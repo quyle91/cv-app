@@ -1,5 +1,13 @@
-const CvEnglish = () => {
-  return <h1>CV english</h1>
+import NavIcon from "../components/nav-icon"
+import WrapperCvEnglish from "../components/wrapper-cv-english"
+
+const CvEnlish = () => {
+    return (
+        <>
+        <NavIcon/>
+        <WrapperCvEnglish/>
+        </>
+    )
 }
 
-export default CvEnglish
+export default CvEnlish

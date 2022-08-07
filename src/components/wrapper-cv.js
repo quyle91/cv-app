@@ -1,21 +1,10 @@
 import HeadingCv from "./heading-cv"
-// english
-import HeadingCvEnglish from "./heading-cv-english"
 
 import AvatarCv from "./avatar-cv"
-
 
 import ContactCv from "./contact-cv"
 import SkillCv from "./skill-cv"
 import InterestsCv from "./interests-cv"
-
-// english
-import ContactCvEnglish from "./contact-cv-english"
-import SkillCvEnglish from "./skill-cv-english"
-import InterestsCvEnglish from "./interests-cv-english"
-
-
-
 
 import TargetCv from "./target-cv"
 import ProjectsCv from "./projects-cv"
@@ -24,20 +13,11 @@ import EducationCv from "./education-cv"
 import PersonalityCv from "./personality-cv"
 import ReferenceCv from "./reference-cv"
 
-// english
-import TargetCvEnglish from "./target-cv-english"
-import ProjectsCvEnglish from "./projects-cv-english"
-import ExperienceCvEnglish from "./experience-cv-english"
-import EducationCvEnglish from "./education-cv-english"
-import PersonalityCvEnglish from "./personality-cv-english"
-import ReferenceCvEnglish from "./reference-cv-english"
-
-
-import Footer from "./footer"
+import FooterCv from "./footer-cv"
 
 
 
-const WrapperCv = () => {
+const WrapperCvEnlish = () => {
 	document.body.classList.remove(...document.body.classList)
 	document.body.classList.add("cv")
 	
@@ -48,43 +28,29 @@ const WrapperCv = () => {
 	return (
 		<>
 			<div id="wrapper-cv" className="w3-main w3-white w3-text-dark-gray" style={css}>
-				{/*<HeadingCv/>*/}
-				<HeadingCvEnglish/>
+				<HeadingCv/>
 				<div id="cvcontent" className="w3-row">
 					<div className="w3-third w3-padding-large">
 						<AvatarCv/>
 
-						{/*<ContactCv/>
+						<ContactCv/>
 						<SkillCv/>
-						<InterestsCv/>*/}
-
-						{/*English */}
-	        			<ContactCvEnglish/>
-						<SkillCvEnglish/>
-						<InterestsCvEnglish/>
+						<InterestsCv/>
 						
 					</div>
 					<div className="w3-twothird w3-padding-large">
-						{/*<TargetCv/>
+						<TargetCv/>
 						<ProjectsCv/>
 		          		<ExperienceCv/>
 			          	<EducationCv />
 			          	<PersonalityCv/>
-			          	<ReferenceCv/>*/}
-
-			          	{/*English*/}
-			          	<TargetCvEnglish/>
-						<ProjectsCvEnglish/>
-		          		<ExperienceCvEnglish/>
-			          	<EducationCvEnglish />
-			          	<PersonalityCvEnglish/>
-			          	<ReferenceCvEnglish/>
+			          	<ReferenceCv/>
 					</div>
 				</div>
 				<br/>
-				<Footer/>
+				<FooterCv/>
 			</div>
 		</>
 	)
 }
-export default WrapperCv
+export default WrapperCvEnlish

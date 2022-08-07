@@ -1,3 +1,6 @@
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 *{
     letter-spacing: -1px;
 }
@@ -34,17 +37,6 @@ a.link{
 a:hover{
     text-decoration: underline;
     font-weight: bold;
-}
-#content a::after{
-    content: "\f08e";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: 0.8em;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-left: 6px;
-    opacity: 0.4;
 }
 a.w3-button:hover{
     color: inherit;
@@ -99,4 +91,18 @@ body.cv{
 }
 .project-company.sentius small{
     margin-top: 10px;
+}
+#nav-icon{
+    z-index: 2;
+}
+.content a::after{
+    content: "\f08e";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 0.8em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 6px;
+    opacity: 0.4;
 }
