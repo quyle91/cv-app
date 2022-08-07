@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 const ProjectsCv = () => {
     return ( 
         <>
-        <div>
+        <div id="projects">
             <h2 className="w3-padding-16">Dự án gần đây</h2>
             <div className="">
                 <ol className="w3-ol">
@@ -22,4 +22,4 @@ const ProjectsCv = () => {
         </>
     )
 }
-export default ProjectsCv;
+export default ProjectsCv

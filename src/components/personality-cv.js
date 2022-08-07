@@ -1,7 +1,7 @@
 const PersonalityCv = () => {
     return ( 
         <>
-            <div>
+            <div id="personality-cv">
                 <h2 className="w3-padding-16">Đôi chút về tính cách</h2>
                 <p>Là người hướng nội</p>
                 <p>Tiếp thu chậm nhưng nhớ lâu. Thích tìm hiểu rõ ràng nếu có thể.</p>
@@ -10,4 +10,4 @@ const PersonalityCv = () => {
         </>
     )
 }
-export default PersonalityCv;
+export default PersonalityCv

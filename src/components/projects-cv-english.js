@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 const ProjectsCvEnglish = () => {
     return ( 
         <>
-        <div>
+        <div id="projects-cv-english">
             <h2 className="w3-padding-16">Recent Projects</h2>
             <div className="">
                 <ol className="w3-ol">
@@ -22,4 +22,4 @@ const ProjectsCvEnglish = () => {
         </>
     )
 }
-export default ProjectsCvEnglish;
+export default ProjectsCvEnglish

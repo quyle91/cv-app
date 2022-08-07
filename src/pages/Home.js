@@ -1,5 +1,15 @@
-const Home = () => {
-  return <h1>Home</h1>;
-};
+// Main page
+import Nav from "../components/nav"
+import NavIcon from "../components/nav-icon"
+import BannerLeft from "../components/banner-left"
+import BannerMobile from "../components/banner-mobile"
 
-export default Home;
+// Home page
+import WrapperMain from "../components/wrapper-main"
+
+
+const Home = () => {
+  return <WrapperMain/>
+}
+
+export default Home

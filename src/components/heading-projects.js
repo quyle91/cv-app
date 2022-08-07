@@ -1,7 +1,7 @@
 const HeadingProjects = () => {
     return ( 
     <>
-        <header className="w3-container" style={{padding: "128px 0"}}>
+        <header id="heading-projects" className="w3-container" style={{padding: "128px 0"}}>
             <div className="w3-padding-32 ">
                 <h1 className="w3-jumbo">
                     <b>Các dự án đã hoàn thành</b>
@@ -11,4 +11,4 @@ const HeadingProjects = () => {
     </>
     )
 }
-export default HeadingProjects;
+export default HeadingProjects

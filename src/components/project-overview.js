@@ -1,7 +1,7 @@
 const ProjectOverview = () => {
     return ( 
         <>
-        <div className="w3-content w3-padding-32">
+        <div id="project-overview" className="w3-content w3-padding-32">
             <div className="w3-row w3-center w3-light-grey w3-padding-16 w3-section">
                 <div className="w3-third w3-section">
                     <span className="w3-xxlarge"><b>14+</b></span><br/>
@@ -23,4 +23,4 @@ const ProjectOverview = () => {
         </>
     )
 }
-export default ProjectOverview;
+export default ProjectOverview

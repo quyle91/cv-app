@@ -1,53 +1,55 @@
-import HeadingCv from "./heading-cv";
+import HeadingCv from "./heading-cv"
 // english
-import HeadingCvEnglish from "./heading-cv-english";
+import HeadingCvEnglish from "./heading-cv-english"
 
-import AvatarCv from "./avatar-cv";
-
-
-import ContactCv from "./contact-cv";
-import SkillCv from "./skill-cv";
-import InterestsCv from "./interests-cv";
-
-// english
-import ContactCvEnglish from "./contact-cv-english";
-import SkillCvEnglish from "./skill-cv-english";
-import InterestsCvEnglish from "./interests-cv-english";
+import AvatarCv from "./avatar-cv"
 
 
-
-
-import TargetCv from "./target-cv";
-import ProjectsCv from "./projects-cv";
-import ExperienceCv from "./experience-cv";
-import EducationCv from "./education-cv";
-import PersonalityCv from "./personality-cv";
-import ReferenceCv from "./reference-cv";
+import ContactCv from "./contact-cv"
+import SkillCv from "./skill-cv"
+import InterestsCv from "./interests-cv"
 
 // english
-import TargetCvEnglish from "./target-cv-english";
-import ProjectsCvEnglish from "./projects-cv-english";
-import ExperienceCvEnglish from "./experience-cv-english";
-import EducationCvEnglish from "./education-cv-english";
-import PersonalityCvEnglish from "./personality-cv-english";
-import ReferenceCvEnglish from "./reference-cv-english";
+import ContactCvEnglish from "./contact-cv-english"
+import SkillCvEnglish from "./skill-cv-english"
+import InterestsCvEnglish from "./interests-cv-english"
 
 
-import FooterGreen from "./footer-green";
+
+
+import TargetCv from "./target-cv"
+import ProjectsCv from "./projects-cv"
+import ExperienceCv from "./experience-cv"
+import EducationCv from "./education-cv"
+import PersonalityCv from "./personality-cv"
+import ReferenceCv from "./reference-cv"
+
 // english
-import FooterGreenEnglish from "./footer-green-english";
+import TargetCvEnglish from "./target-cv-english"
+import ProjectsCvEnglish from "./projects-cv-english"
+import ExperienceCvEnglish from "./experience-cv-english"
+import EducationCvEnglish from "./education-cv-english"
+import PersonalityCvEnglish from "./personality-cv-english"
+import ReferenceCvEnglish from "./reference-cv-english"
+
+
+import FooterGreen from "./footer-green"
+// english
+import FooterGreenEnglish from "./footer-green-english"
 
 
 
 const WrapperCv = () => {
-	document.body.classList.add("cv");
+	document.body.classList.remove(...document.body.classList)
+	document.body.classList.add("cv")
+	
 	const css = {
 		maxWidth: "1200px",
 		margin: "auto"
-	};
+	}
 	return (
 		<>
-			<div className="w3-main w3-white w3-text-dark-gray" style={css}>
+			<div id="wrapper-cv" className="w3-main w3-white w3-text-dark-gray" style={css}>
 				{/*<HeadingCv/>*/}
 				<HeadingCvEnglish/>
 				<div id="cvcontent" className="w3-row">
@@ -88,4 +90,4 @@ const WrapperCv = () => {
 		</>
 	)
 }
-export default WrapperCv;
+export default WrapperCv

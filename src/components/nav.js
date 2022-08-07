@@ -1,18 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 const Nav = () => {
     const closeNav = () => {
-        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("nav").style.display = "none"
     }
     const openNav = () => {
-        document.getElementById("mySidebar").style.width = "60%";
-        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("nav").style.width = "60%"
+        document.getElementById("nav").style.display = "block"
     }
     return (
         <>
-        <nav 
-        className = "w3-sidebar w3-animate-right w3-xxlarge"
-        id = "mySidebar"
+        <nav id="nav" className = "w3-sidebar w3-animate-right w3-xxlarge"
         style = {
             {
                 display: "none",
@@ -36,7 +34,7 @@ const Nav = () => {
                 <Link onClick={closeNav} className="w3-bar-item w3-button w3-large" to="/administratorz">AdministratorZ Document</Link>
             </div>
         </nav>
-        <span 
+        <span id="nav--bar"
             className = "w3-button w3-top w3-white w3-xxlarge w3-hover-text-black"
             style = { { width: "auto", right: 0 } }
             onClick = { openNav }
@@ -46,5 +44,5 @@ const Nav = () => {
         </>
     )
 
-};
-export default Nav;
+}
+export default Nav

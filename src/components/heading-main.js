@@ -1,8 +1,8 @@
 const HeadingMain = () => {
     return ( 
     <>
-        <header className="w3-container w3-content w3-center" style={{padding: "64px 0px" }} id="home">        
-            <div id="spData2">
+        <header id="heading-main" className="w3-container w3-content w3-center" style={{padding: "64px 0px" }}>        
+            <div>
                 <h1 className="w3-jumbo">
                     <b>Quý Lê</b>
                 </h1>
@@ -28,4 +28,4 @@ const HeadingMain = () => {
     </>
     )
 }
-export default HeadingMain;
+export default HeadingMain

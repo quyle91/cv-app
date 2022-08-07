@@ -1,20 +1,22 @@
-import "../assets/import.css";
-import "../assets/style.css";
+import { Outlet } from "react-router-dom";
+
+import "../assets/import.css"
+import "../assets/style.css"
 
 // Main page
-import Nav from "../components/nav";
-import NavIcon from "../components/nav-icon";
-import BannerLeft from "../components/banner-left";
-import BannerMobile from "../components/banner-mobile";
+import Nav from "../components/nav"
+import NavIcon from "../components/nav-icon"
+import BannerLeft from "../components/banner-left"
+import BannerMobile from "../components/banner-mobile"
 
 // Home page
-import WrapperMain from "../components/wrapper-main";
+import WrapperMain from "../components/wrapper-main"
 
 // Cv page
-import WrapperCv from "../components/wrapper-cv";
+import WrapperCv from "../components/wrapper-cv"
 
 // Project page
-import WrapperProjects from "../components/wrapper-projects";
+import WrapperProjects from "../components/wrapper-projects"
 
 
 const Layout = () => {
@@ -32,11 +34,23 @@ const Layout = () => {
             <WrapperCv/>*/}
 
             {/*Projects Page*/}            
-            <NavIcon/>
+            {/*<NavIcon/>
             <BannerLeft/>
-            <WrapperProjects/>
+            <WrapperProjects/>*/}
+
+            {/*<NavIcon/>
+            <Nav/>
+            
+            <BannerLeft/>
+            <BannerMobile/>*/}
+
+            <Nav/>
+            <BannerLeft/>
+            <BannerMobile/>
+            <Outlet />
+
         </>
     )
-};
+}
 
-export default Layout;
+export default Layout

@@ -1,7 +1,7 @@
 const TargetCvEnglish = () => {
     return ( 
         <>
-        <div>
+        <div id="target-cv-english">
             <h2 className="w3-padding-16">
                 Career
             </h2>
@@ -12,4 +12,4 @@ const TargetCvEnglish = () => {
         </>
     )
 }
-export default TargetCvEnglish;
+export default TargetCvEnglish

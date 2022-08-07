@@ -4,12 +4,12 @@ import ProjectItemLink from "./item-link"
 import ProjectItemTitle from "./item-title"
 
 const TemplateProjectsDesign = (prop) => {
-    const id = "id"+ prop.id;
+    const id = "id"+ prop.id
     const openModal = (id) =>{
-        document.getElementById(id).style.display='block';
+        document.getElementById(id).style.display='block'
     }
     const closeModal = (id) =>{
-        document.getElementById(id).style.display='none';
+        document.getElementById(id).style.display='none'
     }
     return (
         <>
@@ -68,4 +68,4 @@ const TemplateProjectsDesign = (prop) => {
         </>
     )
 }
-export default TemplateProjectsDesign;
+export default TemplateProjectsDesign

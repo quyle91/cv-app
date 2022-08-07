@@ -1,7 +1,7 @@
 const FooterGreen = () => {
     return ( 
         <>
-        <footer className="w3-padding-large w3-green w3-xlarge">
+        <footer id="footer-green" className="w3-padding-large w3-green w3-xlarge">
             <div className="">
                 <a className="w3-margin-right" href="https://facebook.com/timquen2014"><i className="fa fa-facebook-official w3-hover-opacity"></i></a>
                 <a className="w3-margin-right" href="https://www.linkedin.com/in/quyle91/"><i className="fa fa-linkedin w3-hover-opacity"></i></a>
@@ -13,4 +13,4 @@ const FooterGreen = () => {
         </>
     )
 }
-export default FooterGreen;
+export default FooterGreen

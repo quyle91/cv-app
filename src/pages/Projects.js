@@ -1,5 +1,6 @@
+import WrapperProjects from "../components/wrapper-projects"
 const Projects = () => {
-  return <h1>Du An</h1>;
-};
+  return <WrapperProjects/>
+}
 
-export default Projects;
+export default Projects

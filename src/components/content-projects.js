@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"
 
 import TemplateProjectsFilter from "../templates/projects/filter"
 import TemplateProjectsItem from "../templates/projects/item"
@@ -10,7 +10,7 @@ const ContentProjects = () => {
     const filter = 'oth'
     return ( 
         <>
-            <div className="w3-row row-fix-margin">
+            <div id="contact-project" className="w3-row row-fix-margin">
                 <TemplateProjectsFilter/>
                 <div id="content" className="col-container">
                     {

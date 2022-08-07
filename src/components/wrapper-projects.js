@@ -1,9 +1,11 @@
-import HeadingProjects from "./heading-projects";
-import ContentProjects from "./content-projects";
-import FooterGreen from "./footer-green.js";
+import HeadingProjects from "./heading-projects"
+import ContentProjects from "./content-projects"
+import FooterGreen from "./footer-green.js"
 
 const WrapperProjects = () => {
-	document.body.classList.add("duan");
+	document.body.classList.remove(...document.body.classList)
+	document.body.classList.add("projects")
+	
 	const style = {
         marginLeft: "40%",
         backgroundSize: "contain",
@@ -14,6 +16,7 @@ const WrapperProjects = () => {
 	return (
 		<>
 		<div 
+		id="wrapper-projects"
 		className="w3-main w3-padding-large"
 		style={style}
 		>
@@ -24,4 +27,4 @@ const WrapperProjects = () => {
 		</>
 	)
 }
-export default WrapperProjects;
+export default WrapperProjects

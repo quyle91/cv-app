@@ -1,7 +1,7 @@
 const Contact = () => {
     return ( 
         <>
-        <div className="w3-padding-16 w3-content " style={{marginBottom: "64px"}} id="nav5">
+        <div id="contact" className="w3-padding-16 w3-content " style={{marginBottom: "64px"}}>
               <h2>Thông tin liên hệ</h2>
               <hr/>
 
@@ -15,4 +15,4 @@ const Contact = () => {
         </>
     )
 }
-export default Contact;
+export default Contact

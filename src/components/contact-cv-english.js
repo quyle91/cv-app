@@ -1,7 +1,7 @@
 const ContactCvEnglish = () => {
     return ( 
         <>
-        <div>
+        <div id="contact-cv-english">
           <p>0972-054-206</p>
           <p>quylv.dsth@gmail.com</p>
           <p>Thanh Hoa - Vietnam</p>
@@ -10,4 +10,4 @@ const ContactCvEnglish = () => {
         </>
     )
 }
-export default ContactCvEnglish;
+export default ContactCvEnglish

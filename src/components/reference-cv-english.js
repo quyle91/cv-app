@@ -1,7 +1,7 @@
 const PersonalityCvEnglish = () => {
     return ( 
         <>
-            <div>
+            <div id="reference-cv-english">
                 <h2 className="w3-padding-16 ">Reference person</h2>
                 <div className="w3-row">
                     <div className="w3-half ">
@@ -12,4 +12,4 @@ const PersonalityCvEnglish = () => {
         </>
     )
 }
-export default PersonalityCvEnglish;
+export default PersonalityCvEnglish

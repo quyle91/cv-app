@@ -1,5 +1,7 @@
-const Cv = () => {
-  return <h1>CV</h1>;
-};
+import WrapperCv from "../components/wrapper-cv"
 
-export default Cv;
+const Cv = () => {
+  return <WrapperCv/>
+}
+
+export default Cv

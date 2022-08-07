@@ -1,7 +1,7 @@
 const InterestsCvEnglish = () => {
     return ( 
         <>
-        <div>
+        <div id="interests-cv-english">
             <h2 className="w3-padding-16">
                 Interests
             </h2>   
@@ -11,4 +11,4 @@ const InterestsCvEnglish = () => {
         </>
     )
 }
-export default InterestsCvEnglish;
+export default InterestsCvEnglish

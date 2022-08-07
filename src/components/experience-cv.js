@@ -1,7 +1,7 @@
 const ExperienceCv = () => {
     return ( 
         <>
-        <div>
+        <div id="experience-cv">
             <h2 className="w3-padding-16">Kinh nghiệm làm việc</h2>
             <div className="">
                 <div className="w3-row">
@@ -78,4 +78,4 @@ const ExperienceCv = () => {
         </>
     )
 }
-export default ExperienceCv;
+export default ExperienceCv

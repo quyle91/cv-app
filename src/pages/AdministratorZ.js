@@ -1,4 +1,6 @@
+import WrapperAdministratorz from "../components/wrapper-administratorz"
+
 const AdministratorZ = ()=> {
-  return <h1>AdministratorZ</h1>
+  return <WrapperAdministratorz/>
 }
-export default AdministratorZ;
+export default AdministratorZ

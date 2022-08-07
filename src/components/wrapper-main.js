@@ -1,11 +1,13 @@
-import HeadingMain from "./heading-main";
-import About from "./about.js";
-import ProjectOverview from "./project-overview.js";
-import Contact from "./contact.js";
-import FooterWhite from "./footer-white.js";
+import HeadingMain from "./heading-main"
+import About from "./about.js"
+import ProjectOverview from "./project-overview.js"
+import Contact from "./contact.js"
+import FooterWhite from "./footer-white.js"
 
 const WrapperMain = () => {
-	document.body.classList.add("main");
+	document.body.classList.remove(...document.body.classList)
+	document.body.classList.add("main")
+	
 	const style = {
         marginLeft: "40%",
         backgroundSize: "contain",
@@ -16,6 +18,7 @@ const WrapperMain = () => {
 	return (
 		<>
 		<div 
+		id="wrapper-main"
 		className="w3-main w3-padding-large"
 		style={style}
 		>
@@ -28,4 +31,4 @@ const WrapperMain = () => {
 		</>
 	)
 }
-export default WrapperMain;
+export default WrapperMain

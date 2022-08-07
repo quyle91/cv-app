@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 const HeadingCv = () => {
     return ( 
     <>
-        <header className="w3-padding-large" id="fa-home">
+        <header id="heading-cv" className="w3-padding-large" id="fa-home">
             <div className="w3-padding-32 ">
                 <h1 className="w3-xxxlarge">
                     <b>Lê Văn Quý</b>
@@ -22,4 +22,4 @@ const HeadingCv = () => {
     </>
     )
 }
-export default HeadingCv;
+export default HeadingCv
