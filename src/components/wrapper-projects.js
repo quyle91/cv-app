@@ -1,6 +1,6 @@
 import HeadingProjects from "./heading-projects"
 import ContentProjects from "./content-projects"
-import FooterGreen from "./footer-green.js"
+import Footer from "./footer.js"
 
 const WrapperProjects = () => {
 	document.body.classList.remove(...document.body.classList)
@@ -22,7 +22,7 @@ const WrapperProjects = () => {
 		>
 			<HeadingProjects/>
 			<ContentProjects/>
-			<FooterGreen/>
+			<Footer/>
 		</div>
 		</>
 	)

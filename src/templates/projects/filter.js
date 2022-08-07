@@ -27,7 +27,7 @@ const TemplateProjectsFilter = () => {
 
     return ( 
         <>
-            <div className="w3-container">
+            <div>
                 <strong>Lọc: </strong>
                 {
                     listType.map((item,key) => (

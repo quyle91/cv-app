@@ -2,7 +2,7 @@ import HeadingMain from "./heading-main"
 import About from "./about.js"
 import ProjectOverview from "./project-overview.js"
 import Contact from "./contact.js"
-import FooterWhite from "./footer-white.js"
+import Footer from "./footer.js"
 
 const WrapperMain = () => {
 	document.body.classList.remove(...document.body.classList)
@@ -26,7 +26,7 @@ const WrapperMain = () => {
 			<About/>
 			<ProjectOverview/>
 			<Contact/>
-			<FooterWhite/>
+			<Footer/>
 		</div>
 		</>
 	)

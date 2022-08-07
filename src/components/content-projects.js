@@ -10,14 +10,17 @@ const ContentProjects = () => {
     const filter = 'oth'
     return ( 
         <>
-            <div id="contact-project" className="w3-row row-fix-margin">
-                <TemplateProjectsFilter/>
-                <div id="content" className="col-container">
-                    {
-                        projectsDataItems.map((item,key)=>(
-                            <TemplateProjectsItem key={key} id={key} item={item} filter={filter} />
-                        ))
-                    }
+            <div id="content-project" className="w3-row">
+                <div className="w3-content">
+                    <TemplateProjectsFilter/>
+                    <hr/>
+                    <div className="col-container row-fix-margin">
+                        {
+                            projectsDataItems.map((item,key)=>(
+                                <TemplateProjectsItem key={key} id={key} item={item} filter={filter} />
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
             <div className="w3-padding-32 w3-content w3-text-grey" style={{marginBottom: "64px"}}></div>

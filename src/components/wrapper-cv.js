@@ -33,9 +33,7 @@ import PersonalityCvEnglish from "./personality-cv-english"
 import ReferenceCvEnglish from "./reference-cv-english"
 
 
-import FooterGreen from "./footer-green"
-// english
-import FooterGreenEnglish from "./footer-green-english"
+import Footer from "./footer"
 
 
 
@@ -84,8 +82,7 @@ const WrapperCv = () => {
 					</div>
 				</div>
 				<br/>
-				{/*<FooterGreen/>*/}
-				<FooterGreenEnglish/>
+				<Footer/>
 			</div>
 		</>
 	)
