@@ -2,7 +2,7 @@ const ExperienceCvEnglish = () => {
     return ( 
         <>
         <div id="experience-cv-english">
-            <h2 className="w3-padding-16">Work experience</h2>
+            <h2 className="w3-padding-16">Work Experience</h2>
             <div className="">
                 <div className="w3-row">
                   <div className="w3-twothird">
