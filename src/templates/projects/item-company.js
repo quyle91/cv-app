@@ -1,4 +1,4 @@
-import { projectsDataCompany } from '../../data/projects-company'
+import { projectsDataCompany } from '../../data/projects'
 
 const ProjectItemCompany =(prop)=> {
 	return ( 

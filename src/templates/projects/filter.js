@@ -1,5 +1,4 @@
-import { projectsDataItems } from '../../data/projects-items'
-import { projectsDataItemType } from '../../data/projects-item-type'
+import { projectsDataItems, projectsDataItemType } from '../../data/projects'
 
 
 const TemplateProjectsFilter = () => {

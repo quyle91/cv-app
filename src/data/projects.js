@@ -1,3 +1,34 @@
+export const projectsDataCompany = {
+    "mka": <div className="project-company mka w3-margin-top"><small> Working on </small><a href='https://mka.com.vn'> <img width='100px' src='./img/minh-khang-logo.png'/></a> </div>,
+    "sentius": <div className="project-company sentius w3-margin-top"><small> Working on </small><a href='https://sentius.com.au'> <img width='50px' src='./img/sentius.svg'/></a> </div>
+}
+export const projectsDataItemType = [
+    {
+        type: "year",
+        label: "Year",
+        show: false
+    },
+    {
+        type: "web",
+        label: "Website",
+        show: true
+    },
+    {
+        type: "des",
+        label: "Design",
+        show: true
+    },
+    {
+        type: "oth",
+        label: "Khác",
+        show: true
+    },
+    {
+        type: "vid",
+        label: "Video",
+        show: true
+    }
+]
 export const projectsDataItems = [
     {
         title: "Từ năm 2022",
