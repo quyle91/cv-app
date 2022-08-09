@@ -4,7 +4,7 @@ const About = () => {
     return ( 
         <>
         <div id="about" className="w3-content w3-padding-32">
-            <h2>Về tôi</h2>
+            <h2>Về tôi </h2>
             <hr/>
             <div id="vetoi">
                 <p><i>Kinh nghiệm làm việc từ 2014 đến nay</i></p>
