@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const ProjectOverview = () => {
     return ( 
         <>
@@ -12,7 +14,7 @@ const ProjectOverview = () => {
                     Dự án đã hoàn thành
                     <br/>
                     <br/>
-                    <a className="w3-button w3-border w3-small" href="./duan.html">Xem</a>
+                    <Link className="w3-button w3-border w3-small" to="./duan.html">Xem</Link>
                 </div>
                 <div className="w3-third w3-section">
                     <span className="w3-xxlarge"><b>89+</b></span><br/>
