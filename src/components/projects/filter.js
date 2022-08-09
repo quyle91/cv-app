@@ -31,7 +31,7 @@ const TemplateProjectsFilter = () => {
                 <strong>Lọc: </strong>
                 {
                     listType.map((item,key) => (
-                        <button key={key} onClick={onClickFilter} className="w3-button w3-border w3-small mrr8">
+                        <button key={key} onClick={(e)=> setFilter(item.type)} className="w3-button w3-border w3-small mrr8">
                             {item.label}
                         </button>
                     ))
