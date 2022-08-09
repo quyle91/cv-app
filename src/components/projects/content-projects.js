@@ -8,7 +8,7 @@ import TemplateProjectsItemDesign from "./des"
 import TemplateProjectsItemOth from "./oth"
 
 // data
-import { projectsDataItems, projectsDataItemType, projectsDataCompany} from '../../data/projects'
+import { projectsDataItems, projectsDataItemType} from '../../data/projects'
 
 const ContentProjects = () => {
     const items = projectsDataItems
@@ -29,13 +29,6 @@ const ContentProjects = () => {
             }
         })
     })    
-    console.log(listType);
-    /*const onClickFilter = (t)=> {
-        setFilter(prev=>{
-            console.log(t.currentTarget.dataset.type);
-            return "vid"
-        })
-    }*/
     
     const [filter, setFilter] = useState("all")
     return ( 
