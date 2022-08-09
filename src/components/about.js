@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const About = () => {
     return ( 
         <>
@@ -6,9 +8,11 @@ const About = () => {
             <hr/>
             <div id="vetoi">
                 <p><i>Kinh nghiệm làm việc từ 2014 đến nay</i></p>
-                <p>Là người có trách nhiệm với công việc và hướng đến sự chuyên nghiệp. Tôi mong muốn nhận được sự tin tưởng của đồng nghiệp &amp khách hàng.</p>
+                <p>Là người có trách nhiệm với công việc và hướng đến sự chuyên nghiệp. Tôi mong muốn nhận được sự tin tưởng của đồng nghiệp & khách hàng.</p>
                 <p>
-                <i><a href="./cv.html">Xem Cv của tôi </a></i>
+                <i>
+                    <Link to="/cv.html">Xem Cv của tôi </Link>
+                </i>
                 </p>
             </div>
         </div> 

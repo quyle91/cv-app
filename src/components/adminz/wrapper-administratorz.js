@@ -1,6 +1,12 @@
-import Contact from "./contact"
+import Contact from "../contact"
 import Donate from "./donate"
 import FooterAdministratorz from "./footer-administratorz"
+
+/*Content*/
+import AdminzHeading from "./heading.js";
+import AdminzQuote from "./quote.js";
+
+
 const WrapperAdministratorz = () => {
 	document.body.classList.remove(...document.body.classList)
 	document.body.classList.add("administrator-z")
@@ -19,7 +25,9 @@ const WrapperAdministratorz = () => {
 			}}
 			>
 				<div className="content w3-content">
-					updating
+					<AdminzHeading/>
+					<AdminzQuote/>
+					<h1>Đang cập nhật.</h1>
 				</div>
 				<Contact/>
 				<Donate/>

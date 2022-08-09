@@ -1,6 +1,6 @@
 import NavIcon from "../components/nav-icon"
 import BannerLeft from "../components/banner-left"
-import WrapperProjects from "../components/wrapper-projects"
+import WrapperProjects from "../components/projects/wrapper-projects"
 const Projects = () => {
     return (
         <>

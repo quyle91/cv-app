@@ -1,5 +1,5 @@
 import NavIcon from "../components/nav-icon"
-import WrapperCvEnglish from "../components/wrapper-cv-english"
+import WrapperCvEnglish from "../components/cv/wrapper-cv-english"
 
 const CvEnlish = () => {
     return (

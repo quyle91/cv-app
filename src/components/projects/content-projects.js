@@ -1,13 +1,13 @@
 import { useState } from "react"
 
-import TemplateProjectsFilter from "../templates/projects/filter"
-import TemplateProjectsItem from "../templates/projects/item"
+import TemplateProjectsFilter from "./filter"
+import TemplateProjectsItem from "./item"
 
 // data
-import { projectsDataItems } from '../data/projects'
+import { projectsDataItems } from '../../data/projects'
 
 const ContentProjects = () => {
-    const filter = 'oth'
+    const filter = 'all'
     return ( 
         <>
             <div id="content-project" className="w3-row">
