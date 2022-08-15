@@ -75,7 +75,7 @@ export const projectsDataItems = [
         subtitle: "",
         type: "web",
         image: "./img/kfa.png",
-        link: "https://dev-noithatkfa.pantheonsite.io/",
+        link: "https://noithatkfa.com/",
         company: ""
     },
     {
